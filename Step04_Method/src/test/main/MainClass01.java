@@ -1,5 +1,6 @@
 package test.main;
 
+import test.mypac.Car;
 import test.mypac.MyObject;
 
 public class MainClass01 {
@@ -10,9 +11,24 @@ public class MainClass01 {
 		 * 단, 메소드가 어떤 data를 리턴하면 해당 데이터를 지역변수에 담으세요.
 		 */
 		MyObject mo = new MyObject();
-		mo.wait();
+		mo.walk();
 		int num = mo.getNumber();
 		String greet=mo.getGreeting();
+		Car car = mo.getCar();
 	
+		mo.setNum(1);
+		mo.setName("김구라");
+		mo.useCar(new Car());
+		
+		int a =999;
+		String b = "누구게";
+		Car c1 = new Car();
+		
+		mo.setNum(a);
+		mo.setName(b);
+		mo.useCar(c1);
+		
+		mo.doSomething(2, "해골", new Car());
+		mo.doSomething(a, b, c1);
 	}
 }
