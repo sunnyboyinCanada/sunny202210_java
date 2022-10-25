@@ -29,7 +29,16 @@ public class MyObject {
 		car.drive();
 	}
 	
-	public void doSomething(int num, String msg, Car c) {
+	public void send() {
+		System.out.println("무언가를 작업합니다.");
+	}
+	public void send(int num) {
+		System.out.println(" 을 작업합니다.");
+	}
+	public void send(String name) {
+		System.out.println("무언가를 작업합니다.");
+	}
+	public void send(Car car) {
 		System.out.println("무언가를 작업합니다.");
 	}
 }
